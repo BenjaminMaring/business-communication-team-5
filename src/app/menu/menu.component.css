@@ -1,0 +1,27 @@
+.format{
+    display: flex; 
+    flex-direction: column;
+    background-color: rgba(155, 186, 196, 0.5);
+    width: 10vw;
+    height: 100vh;
+}
+
+.homeSize{
+    font-size: 2vw;
+    width: 8vw;
+    height: 6vh;
+    margin: 1vw;
+}
+
+.userButton{
+    font-size: 2vw;
+    width: 7vw;
+    height: 6vh;
+    margin-left: 1.3vw;
+    margin-bottom: .5vh;
+}
+
+.userButton:hover{
+    background-color: rgb(60, 0, 172);
+    color: white;
+}

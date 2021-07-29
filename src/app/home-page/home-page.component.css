@@ -1,0 +1,21 @@
+.mainDisplay{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    Width: 80vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.signOut{
+    height: 30px;
+}
+h1{
+    margin: .8vh;
+    
+}
+
