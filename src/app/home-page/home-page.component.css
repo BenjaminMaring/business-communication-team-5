@@ -9,13 +9,14 @@
 
 .wrapper{
     display: flex;
+    
 }
 
 .signOut{
     height: 30px;
 }
+
 h1{
-    margin: .8vh;
-    
+    margin: .8vh;    
 }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -12,4 +12,12 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  url="./assets/logo.jpg"
+
+  signOut(){
+    
+  }
+
 }
+
+
