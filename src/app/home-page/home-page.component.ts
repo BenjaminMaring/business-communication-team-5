@@ -1,4 +1,5 @@
 import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
+import { UserInfoService } from '../user-info.service';
 
 @Component({
   selector: 'app-home-page',
