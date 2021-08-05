@@ -1,3 +1,4 @@
+import { getAttrsForDirectiveMatching } from '@angular/compiler/src/render3/view/util';
 import { Component, OnInit } from '@angular/core';
 import { UserInfoService } from '../user-info.service';
 
@@ -8,14 +9,19 @@ import { UserInfoService } from '../user-info.service';
 })
 export class MenuComponent implements OnInit {
 
-  menu: MenuComponent[] = [];
+  menu: any[] = this.userInfoService.getEverything();
 
-  constructor() { }
+  constructor(private userInfoService: UserInfoService) {}
 
   ngOnInit(): void {
+    this.getUsers();
   }
 
-  
+  getUsers(): void{
+    console.log("getUsers called");
+    const asdf = this.userInfoService.getEverything();
+  }
+
 
 
 }
