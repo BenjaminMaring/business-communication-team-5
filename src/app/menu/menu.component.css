@@ -14,11 +14,11 @@
 }
 
 .userButton{
-    font-size: 2vw;
-    width: 7vw;
-    height: 6vh;
-    margin-left: 1.3vw;
-    margin-bottom: .5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px; 
+
 }
 
 .userButton:hover{

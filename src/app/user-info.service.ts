@@ -37,10 +37,3 @@ getEverything(){
 }
 
 }//end class
-
-// let messArray: any = [
-//   { user: "Ben", message: "hey", time: Date},
-//   { user: "John", message: "hello", time: Date},
-//   { user: "Na young", message: "Is This Working?", time: Date},
-//   { user: "Ju Hyeon", message: "I think so?", time: Date}
-// ]

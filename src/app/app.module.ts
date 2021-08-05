@@ -7,6 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { MessagesComponent } from './messages/messages.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { AfterLoginComponent } from './after-login/after-login.component';
+import { MessageFeedComponent } from './message-feed/message-feed.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { LoginFormComponent } from './login-form/login-form.component';
     MenuComponent,
     HomePageComponent,
     MessagesComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    AfterLoginComponent,
+    MessageFeedComponent
   ],
   imports: [
     BrowserModule,

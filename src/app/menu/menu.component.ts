@@ -9,7 +9,7 @@ import { UserInfoService } from '../user-info.service';
 })
 export class MenuComponent implements OnInit {
 
-  menu: any[] = this.userInfoService.getEverything();
+  menu: any[] = [];
 
   constructor(private userInfoService: UserInfoService) {}
 
@@ -19,7 +19,9 @@ export class MenuComponent implements OnInit {
 
   getUsers(): void{
     console.log("getUsers called");
-    const asdf = this.userInfoService.getEverything();
+    const placeH = this.userInfoService.getEverything();
+    this.menu = placeH;
+    console.log(this.menu);
   }
 
 
