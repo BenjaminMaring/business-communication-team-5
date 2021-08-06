@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserInfoService } from '../user-info.service';
 
 @Component({
   selector: 'app-message-feed',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageFeedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userInfoService: UserInfoService) { }
+
+  messages: any[]=[];
+
+  url= "./assets/logo.jpg";
 
   ngOnInit(): void {
+      this.getMessages();
   }
+
+   getMessages(): void{
+     this.messages = this.userInfoService.getMessages();
+   }
 
 }

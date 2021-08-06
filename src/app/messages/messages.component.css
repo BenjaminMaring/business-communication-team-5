@@ -1,0 +1,7 @@
+.wrapper{
+    display: flex;
+}
+.signOut{
+    height: 30px;
+    width: 10vw;
+}

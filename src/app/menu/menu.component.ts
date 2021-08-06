@@ -7,9 +7,12 @@ import { UserInfoService } from '../user-info.service';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
+
 export class MenuComponent implements OnInit {
 
   menu: any[] = [];
+
+  selectedUser: string="";
 
   constructor(private userInfoService: UserInfoService) {}
 
@@ -19,10 +22,17 @@ export class MenuComponent implements OnInit {
 
   getUsers(): void{
     console.log("getUsers called");
-    const placeH = this.userInfoService.getEverything();
+    const placeH = this.userInfoService.getUsers();
     this.menu = placeH;
   }
 
+  sendUser(user: string): void{
+    this.selectedUser=user;
+    console.log(this.selectedUser);
+  }
 
+  swapButtons(): void{
+    
+  }
 
 }

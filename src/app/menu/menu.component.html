@@ -1,11 +1,11 @@
 <div class = "format">
     <div>
-        <button routerLink ="/home" class="homeSize">Home</button>
+        <button routerLink ="/home" class="homeSize">Search</button>
     </div>
 
     <div *ngFor ="let items of menu" class = "userButton">
        
-        <button  routerLink="/messages" class="userButton">{{items.user}}</button>
+        <button  (click)= "sendUser(items)"  class="userButton">{{items.user}}</button>
         
     </div>
     

@@ -1,0 +1,25 @@
+.messageBox{
+    border: solid;
+    color: black;
+    margin: 4px;
+}
+
+.image{
+    
+    height: 60px;
+    width: 60px;
+    border: solid;
+}
+
+.scroll{
+    overflow-y: auto;
+}
+
+.outerBox{
+    border: solid;
+    height: 70vh;
+    width: 80vw;
+}
+h1{
+    margin: 10px;
+}

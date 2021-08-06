@@ -9,10 +9,14 @@ import { observable, of } from 'rxjs';
 export class UserInfoService {
   
 public messArray: any = [
-  { user: "Ben", message: "hey", time: Date},
-  { user: "John", message: "hello", time: Date},
-  { user: "Na young", message: "Is This Working?", time: Date},
-  { user: "Ju Hyeon", message: "I think so?", time: Date},
+  { user: "Ben", message: "hey", time: Date, url: "bcp\src\assets\logo.jpg"},
+  { user: "John", message: "hello", time: Date, url: "bcp\src\assets\logo.jpg"},
+  { user: "Na young", message: "Is This Working?", time: Date, url: "bcp\src\assets\logo.jpg"},
+  { user: "Ju Hyeon", message: "Hello?", time: Date, url: "bcp\src\assets\logo.jpg"},
+  { user: "Ben", message: "whats up", time: Date, url: "bcp\src\assets\logo.jpg"},
+  { user: "John", message: "how are you", time: Date, url: "bcp\src\assets\logo.jpg"},
+  { user: "Na young", message: "I hope so?", time: Date, url: "bcp\src\assets\logo.jpg"},
+  { user: "Ju Hyeon", message: "Can you hear me?", time: Date, url: "bcp\src\assets\logo.jpg"},
 ]
 
 public userArray: any =[
@@ -22,11 +26,15 @@ public userArray: any =[
   {user: "Ju Hyeonn"}
 ]
 
-  constructor() { }
+constructor() { }
   
-getEverything(){
+getUsers(){
+  console.log("got users");
   return this.userArray;
-  console.log("gotEverything");
 }
+
+ getMessages(){
+  return this.messArray;
+ }
 
 }//end class

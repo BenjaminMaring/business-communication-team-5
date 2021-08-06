@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AfterLoginComponent } from './after-login.component';
+import { ChatFormComponent } from './chat-form.component';
 
-describe('AfterLoginComponent', () => {
-  let component: AfterLoginComponent;
-  let fixture: ComponentFixture<AfterLoginComponent>;
+describe('ChatFormComponent', () => {
+  let component: ChatFormComponent;
+  let fixture: ComponentFixture<ChatFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AfterLoginComponent ]
+      declarations: [ ChatFormComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AfterLoginComponent);
+    fixture = TestBed.createComponent(ChatFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
