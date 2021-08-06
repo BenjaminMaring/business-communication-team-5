@@ -2,10 +2,10 @@
     <div>
         <button routerLink ="/home" class="homeSize">Home</button>
     </div>
-    
-    <div *ngFor ="let menu of menu" class = "userButton">
+
+    <div *ngFor ="let items of menu" class = "userButton">
        
-        <button  routerLink="/messages" class="userButton">{{menu.user}}</button>
+        <button  routerLink="/messages" class="userButton">{{items.user}}</button>
         
     </div>
     

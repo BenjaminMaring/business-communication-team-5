@@ -33,8 +33,9 @@
   
   /* Avatar image */
   img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    width: 11%;
+    border-radius:50%;
+    border: solid;
   }
   
   /* Add padding to containers */
@@ -42,4 +43,6 @@
     padding: 16px;
   }
   
-
+.sizing{
+  size: 50px;
+}

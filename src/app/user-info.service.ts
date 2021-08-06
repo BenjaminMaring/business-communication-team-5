@@ -12,27 +12,20 @@ public messArray: any = [
   { user: "Ben", message: "hey", time: Date},
   { user: "John", message: "hello", time: Date},
   { user: "Na young", message: "Is This Working?", time: Date},
-  { user: "Ju Hyeon", message: "I think so?", time: Date}
+  { user: "Ju Hyeon", message: "I think so?", time: Date},
 ]
 
+public userArray: any =[
+  {user: "Ben"},
+  {user: "John"},
+  {user: "Na Young"},
+  {user: "Ju Hyeonn"}
+]
 
   constructor() { }
-
-// obtaintUsers(){
-//     let users: any = [];
-//     for(let i = 0; i !== messArray.length; i++){
-//       for(let x=0; x !== users.length;x++){
-//         if (messArray[i].user !== users[x]){
-//           users.push(messArray[i].user);
-//         }//end if
-//       }//end nested
-//     }//end outer
-//     return users;
-//     console.log("returned easyArray");
-//   }
-
+  
 getEverything(){
-  return this.messArray;
+  return this.userArray;
   console.log("gotEverything");
 }
 

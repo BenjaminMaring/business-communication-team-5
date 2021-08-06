@@ -21,3 +21,10 @@ h1{
     margin: .8vh;    
 }
 
+.searchBox{
+    width: 20vw;
+    height: 5vh;
+    border: solid;
+    font-size: 30px;
+    color: red;
+}

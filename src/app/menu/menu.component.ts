@@ -21,7 +21,6 @@ export class MenuComponent implements OnInit {
     console.log("getUsers called");
     const placeH = this.userInfoService.getEverything();
     this.menu = placeH;
-    console.log(this.menu);
   }
 
 
