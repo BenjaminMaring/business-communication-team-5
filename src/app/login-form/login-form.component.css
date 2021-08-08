@@ -16,7 +16,7 @@ body {
   background-color: #ecf0f3;
 }
 
-.login-defalut {
+.login-defalut { 
   width: 450px;
   height: 650px;
   padding: 60px 35px 35px 35px;
@@ -27,7 +27,7 @@ body {
   -13px -13px 20px #fff;
 }
 
-.logo {
+ .logo {/* logo composition */
   background-image: url("/assets/login-logo.png");
   width: 100px;
   height: 100px;
