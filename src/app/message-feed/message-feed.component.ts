@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserInfoService } from '../user-info.service';
 
+
 @Component({
   selector: 'app-message-feed',
   templateUrl: './message-feed.component.html',
@@ -8,18 +9,20 @@ import { UserInfoService } from '../user-info.service';
 })
 export class MessageFeedComponent implements OnInit {
 
-  constructor(private userInfoService: UserInfoService) { }
+  constructor(public userInfoService: UserInfoService, ) { }
 
   messages: any[]=[];
+
+  selectedUser?: string;
 
   url= "./assets/logo.jpg";
 
   ngOnInit(): void {
-      this.getMessages();
+      // this.getMessages();
   }
 
-   getMessages(): void{
-     this.messages = this.userInfoService.getMessages();
-   }
+  //  getMessages(): void{
+  //    this.messages = this.userInfoService.getMessages();
+  //  }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserInfoService } from '../user-info.service';
 
 @Component({
   selector: 'app-messages',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessagesComponent implements OnInit {
 
-  constructor() { }
+  menu: any[] = [];
+
+  constructor(private userInfoService: UserInfoService) { }
 
   ngOnInit(): void {
+    this.getUsers();
   }
+
+  getUsers(): void{
+    console.log("getUsers called");
+    const placeH = this.userInfoService.getUsers();
+    this.menu = placeH;
+  }  
 
 }

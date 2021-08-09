@@ -1,40 +1,26 @@
 import { stringify } from '@angular/compiler/src/util';
 import { Injectable } from '@angular/core';
-import { observable, of } from 'rxjs';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserInfoService {
-  
-public messArray: any = [
-  { user: "Ben", message: "hey", time: Date, url: "bcp\src\assets\logo.jpg"},
-  { user: "John", message: "hello", time: Date, url: "bcp\src\assets\logo.jpg"},
-  { user: "Na young", message: "Is This Working?", time: Date, url: "bcp\src\assets\logo.jpg"},
-  { user: "Ju Hyeon", message: "Hello?", time: Date, url: "bcp\src\assets\logo.jpg"},
-  { user: "Ben", message: "whats up", time: Date, url: "bcp\src\assets\logo.jpg"},
-  { user: "John", message: "how are you", time: Date, url: "bcp\src\assets\logo.jpg"},
-  { user: "Na young", message: "I hope so?", time: Date, url: "bcp\src\assets\logo.jpg"},
-  { user: "Ju Hyeon", message: "Can you hear me?", time: Date, url: "bcp\src\assets\logo.jpg"},
+
+public dataArray: any[]=[
+  {channel: "Ben", messages: ["Hello", "Is this working?"], time: [], url: "bcp\src\assets\logo.jpg"},
+  {channel: "John", messages: ["Hey", "I hope this works"], time: [], url: "bcp\src\assets\logo.jpg"},
+  {channel: "Na Young", messages: ["Hey you", "This better be working"], time: [], url: "bcp\src\assets\logo.jpg"},
+  {channel: "Ju Hyeon", messages: ["Whats up?", "Does it work?"], time: [], url: "bcp\src\assets\logo.jpg"},
 ]
 
-public userArray: any =[
-  {user: "Ben"},
-  {user: "John"},
-  {user: "Na Young"},
-  {user: "Ju Hyeonn"}
-]
+  
+
 
 constructor() { }
-  
+//code below is for getting the data to messages component
 getUsers(){
-  console.log("got users");
-  return this.userArray;
+  return this.dataArray;
 }
-
- getMessages(){
-  return this.messArray;
- }
 
 }//end class

@@ -1,12 +1,29 @@
 <div class="mainContent wrapper">
     <div class="userListWrapper">
-      <app-menu></app-menu>
+      <!-- Bellow this is the code    -->
+      <!--       for the menu         -->
+      <div class = "format">
+        <div>
+            <button routerLink ="/home" class="homeSize">Search</button>
+        </div>
+    
+        <div *ngFor ="let items of menu" class = "userButton">
+            <button class="userButton">{{items.channel}}</button>  
+        </div>
     </div>
-    <div #scroller class="feedWrapper">
-      <app-message-feed></app-message-feed>
-    </div>
-  <div>
-    <!-- <app-chat-form></app-chat-form> -->
   </div>
+      <!-- Above is the code for the menu -->
+      <!-- Below is the code where the message-feed component is called -->
+  <div #scroller class="feedWrapper">
+    <app-message-feed></app-message-feed>
+  </div>
+    <!-- Above is the code where the message feed component is called -->
+    <!--     Below is the code for the textBox          -->
+    
+    
+
+    <!--    Above is the code for the text box     -->
+    <!-- Below is the code for the sign out button -->
+  
   <button routerLink= "/login" class="signOut">Sign Out</button>
 </div>

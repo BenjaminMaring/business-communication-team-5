@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageFeedComponent } from '../message-feed/message-feed.component';
 
 @Component({
   selector: 'app-chat-form',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatFormComponent implements OnInit {
 
+  sending: string="";
+
+  message: any={
+    user: "tempName", message: this.sending, time: Date.now(), url: "bcp\src\assets\logo.jpg"
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
