@@ -10,7 +10,15 @@ export class MessagesComponent implements OnInit {
 
   menu: any[] = [];
 
-  channel: any= {channel: "Ben", messages: ["Hello", "Is this working?"], time: [], url: "bcp\src\assets\logo.jpg"};
+  channel: any= {//new channel
+    channelName : "Na-Young",
+    description: "Chatting with Na-Young",
+    messages : [
+      { username: "Na-Young",
+        avatarURL: "",
+        chatMessage: "Hey! How are you??",
+        timeStamp: "2021-08-09 01:11:00",
+        edited: true}]};
 
   constructor(private userInfoService: UserInfoService) { }
 
@@ -24,9 +32,9 @@ export class MessagesComponent implements OnInit {
     console.log(this.menu);
   }  
 
-  getChannel(data: string): void{
+  getChannel(data: any): void{
     this.channel=data;
-    console.log(this.channel.channel + " hi");
+    console.log(this.channel.channelName + " button is working");
   }
 
 }

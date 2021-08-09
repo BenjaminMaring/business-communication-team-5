@@ -12,7 +12,7 @@ export class MessageFeedComponent implements OnInit {
 
 
   @Input() channel: any ={};
-
+  
   
   constructor() { }
 
