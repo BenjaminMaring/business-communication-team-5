@@ -10,6 +10,8 @@ export class MessagesComponent implements OnInit {
 
   menu: any[] = [];
 
+  channel: any= {channel: "Ben", messages: ["Hello", "Is this working?"], time: [], url: "bcp\src\assets\logo.jpg"};
+
   constructor(private userInfoService: UserInfoService) { }
 
   ngOnInit(): void {
@@ -18,8 +20,13 @@ export class MessagesComponent implements OnInit {
 
   getUsers(): void{
     console.log("getUsers called");
-    const placeH = this.userInfoService.getUsers();
-    this.menu = placeH;
+    this.menu = this.userInfoService.getUsers();
+    console.log(this.menu);
   }  
+
+  getChannel(data: string): void{
+    this.channel=data;
+    console.log(this.channel.channel + " hi");
+  }
 
 }

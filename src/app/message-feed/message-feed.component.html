@@ -1,11 +1,11 @@
 <div class="outerBox scroll">
-    <div *ngFor="let message of messages">
+    <div *ngFor="let item of channel.messages">
         <div class="messageBox">           
                 <div class="image" style="display: flex;">
                     <img [src]="url">
-                    <h1>{{message.user}}</h1>
+                    <h1>{{channel.user}}</h1>
                 </div>
-            <h3>{{message.message}}</h3>
+            <h3>{{item}}</h3>
         </div>
     </div>
 </div>

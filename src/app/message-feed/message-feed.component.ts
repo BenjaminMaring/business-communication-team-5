@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { getSafePropertyAccessString } from '@angular/compiler';
+import { Component, Input, OnInit } from '@angular/core';
 import { UserInfoService } from '../user-info.service';
 
 
@@ -9,20 +10,15 @@ import { UserInfoService } from '../user-info.service';
 })
 export class MessageFeedComponent implements OnInit {
 
-  constructor(public userInfoService: UserInfoService, ) { }
 
-  messages: any[]=[];
+  @Input() channel: any ={};
 
-  selectedUser?: string;
+  
+  constructor() { }
 
   url= "./assets/logo.jpg";
 
   ngOnInit(): void {
-      // this.getMessages();
-  }
-
-  //  getMessages(): void{
-  //    this.messages = this.userInfoService.getMessages();
-  //  }
-
+     
+  }  
 }
