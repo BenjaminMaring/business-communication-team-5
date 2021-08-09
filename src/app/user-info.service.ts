@@ -13,7 +13,7 @@ export class UserInfoService {
       channelName : "Na-Young",
       description: "Chatting with Na-Young",
       messages : [
-        { username: "Na-Young",
+        { username: "NaYoung",
           avatarURL: "",
           chatMessage: "Hey! How are you??",
           timeStamp: "2021-08-09 01:11:00",
@@ -22,17 +22,17 @@ export class UserInfoService {
       channelName : "Benjamin",
       description : "Chatting with Benjamin'",
       messages : [
-        {username: "Benjamin Maring",
+        {username: "BenjaminMaring",
           avatarURL: "",
           chatMessage: "Hello, is this working??",
           timeStamp: "2021-08-09 01:11:00",
           edited: true}]},
     {//new channel
-      channelName : "Ju-Hyeon Bae",
+      channelName : "JuHyeonBae",
       description: "Chatting with Ju-Hyeon",
       messages : [
         {
-          username: "Ju Hyeon Bae",
+          username: "JuHyeonBae",
           avatarURL: "",
           chatMessage: "Hey do you know if this is working??",
           timeStamp: "2021-08-09 01:11:00",

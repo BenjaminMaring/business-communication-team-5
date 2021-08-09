@@ -14,7 +14,7 @@ export class MessagesComponent implements OnInit {
     channelName : "Na-Young",
     description: "Chatting with Na-Young",
     messages : [
-      { username: "Na-Young",
+      { username: "NaYoung",
         avatarURL: "",
         chatMessage: "Hey! How are you??",
         timeStamp: "2021-08-09 01:11:00",
