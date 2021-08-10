@@ -7,7 +7,6 @@ import { Injectable } from '@angular/core';
 })
 export class UserInfoService {
 
-
   public messages = [
     {//new channel
       channelName : "Na-Young",

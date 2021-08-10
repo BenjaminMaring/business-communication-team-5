@@ -12,7 +12,7 @@ export class MessageFeedComponent implements OnInit {
 
 
   @Input() channel: any ={};
-  
+
   
   constructor() { }
 
@@ -21,4 +21,12 @@ export class MessageFeedComponent implements OnInit {
   ngOnInit(): void {
      
   }  
+
+  onDelete(chan: any){
+      for (let i=0; i!== this.channel.messages.length(); i++){
+        if (chan === this.channel.messages[i]){
+          this.channel.messages[i].splice();
+        }//end if
+      }//end for
+  }
 }
