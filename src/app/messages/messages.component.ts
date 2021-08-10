@@ -11,7 +11,7 @@ export class MessagesComponent implements OnInit {
 
   menu: any[] = [];
 
-  channel: any= {
+  default: any={//new channel
     channelName : "Na-Young",
     description: "Chatting with Na-Young",
     messages : [
@@ -21,11 +21,14 @@ export class MessagesComponent implements OnInit {
         timeStamp: "2021-08-09 01:11:00",
         edited: true}]};
 
+  channel: any= {};
+
   constructor(private userInfoService: UserInfoService) { }
 
   ngOnInit(): void {
     this.getUsers();
     this.getMessagesChat();
+    this.getChannel(this.default);
   }
 
   getUsers(): void{
