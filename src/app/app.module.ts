@@ -7,6 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MessagesComponent } from './messages/messages.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { MessageFeedComponent } from './message-feed/message-feed.component';
+import { ChatComponent } from './chat/chat.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MessageFeedComponent } from './message-feed/message-feed.component';
     MessagesComponent,
     LoginFormComponent,
     MessageFeedComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,
