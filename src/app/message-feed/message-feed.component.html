@@ -1,12 +1,12 @@
 <div class="outerBox scroll">
-    <div *ngFor="let item of channel.messages">
+    <div *ngFor="let item of channel.messages; let i = index">
         <div class="messageBox">           
                 <div class="image">
                     <img [src]="url">
                     <h1>{{item.username}}</h1>
                 </div>
             <h3>{{item.chatMessage}}</h3>
-            <button (click)="onDelete(item)">Delete</button>
+            <button (click)="onDelete(i)">Delete</button>
         </div>
         
     </div>

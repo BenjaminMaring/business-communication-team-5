@@ -13,7 +13,7 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  url="./assets/logo.jpg"
+  url="./assets/background-remove-logo.png"
 
   signOut(){
     

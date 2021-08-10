@@ -1,7 +1,19 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(12, 12, 12);
+    background: linear-gradient(24deg,#F8F7F2 30%, #BEDAFA 70% );
+}
+
 .mainDisplay{
     display: flex;
     flex-direction: column;
@@ -9,27 +21,67 @@
     Width: 80vw;
     justify-content: center;
     align-items: center;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .wrapper{
     display: flex;
-    
 }
 
-.signOut{
-    height: 30px;
-    width: 10vw;
+.search-set{
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 
+    10px 10px 20px #a7aaaf;
 }
 
-.searchBox{
+.search-set > i {
+    font-size: 20px;
+    color: #cbced1;
+}
+
+.search-set > input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.svg-icon {/*  search icon set  */
     width: 20vw;
-    height: 5vh;
-    border: solid;
-    font-size: 30px;
-    color: red;
+    height: 4vh;
+    margin: 0 10px -3px 25px;
+    position: fixed;
+} 
+
+.main-logo {
+    display: flex;
+    padding-bottom: 20px;
 }
 
-.button{
+.main-title {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 30px;
+    letter-spacing: 20px;
+}
+
+.button,
+.signOut {
+    height: 50px;
     width: 10vw;
-    height: 3vh;
+    background-color: #0278ff;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }

@@ -20,11 +20,20 @@
     <!-- Above is the code where the message feed component is called -->
     <!--     Below is the code for the textBox          -->
     
-    
+    <div class ="messageContainer">
+      <input #message
+      class="position"
+      (keyup.enter)="sendChat(message.value); message.value='' ">
+    <!-- <p *ngFor="let chatMessage of chat_messages">
+      {{chatMessage.username}}: 
+      {{chatMessage.timeStamp | date: 'short'}}: 
+      {{chatMessage.messageContent}}
+    </p> -->
+    </div>
 
     <!--    Above is the code for the text box     -->
     <!-- Below is the code for the sign out button -->
   
   <button routerLink= "/login" class="signOut">Sign Out</button>
-  <app-chat></app-chat>
+  
 </div>

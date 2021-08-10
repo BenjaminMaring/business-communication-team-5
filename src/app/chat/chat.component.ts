@@ -14,7 +14,6 @@ export class ChatComponent implements OnInit {
   sendChat(chat: Message) {
     if(chat) {
       this.chat_messages.push(chat)
-
     }
   }
   

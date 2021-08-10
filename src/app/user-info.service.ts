@@ -1,6 +1,6 @@
 import { stringify } from '@angular/compiler/src/util';
 import { Injectable } from '@angular/core';
-
+import { Message } from "./message";
 
 @Injectable({
   providedIn: 'root'
@@ -38,24 +38,33 @@ export class UserInfoService {
           edited: true}]},
   ];
 
-
-
-
-
-
-
-// public dataArray: any[]=[
-//   {channel: "Ben", messages: ["Hello", "Is this working?"], time: [], url: "bcp\src\assets\logo.jpg"},
-//   {channel: "John", messages: ["Hey", "I hope this works"], time: [], url: "bcp\src\assets\logo.jpg"},
-//   {channel: "Na Young", messages: ["Hey you", "This better be working"], time: [], url: "bcp\src\assets\logo.jpg"},
-//   {channel: "Ju Hyeon", messages: ["Whats up?", "Does it work?"], time: [], url: "bcp\src\assets\logo.jpg"},
-// ]
-
 constructor() { }
 
 //code below is for getting the data to messages component
 getUsers(){
   return this.messages;
+}
+
+getIndex(channelName: string){
+  let channelIndex: number =0;
+  for (let i=0; i!== this.messages.length; i++){
+        if (channelName === this.messages[i].channelName){
+        channelIndex = i;
+        }//end if
+     }//end for
+     return channelIndex;
+}
+
+pushObj(message: string, time: number, index: number): void{
+      let obj: Message = {
+        username: "John", 
+        avatarURL: "",
+        chatMessage: message,
+        timeStamp: time,
+        edited: true,
+      };
+      
+      this.messages[index].messages.push(obj);
 }
 
 }//end class
