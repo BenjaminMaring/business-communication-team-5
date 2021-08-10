@@ -1,24 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: broder-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
 .wrapper{
     display: flex;
-}
-.signOut{
-    height: 30px;
-    width: 10vw;
 }
 
 .format{
     display: flex; 
     flex-direction: column;
-    background-color: rgba(155, 186, 196, 0.5);
-    width: 10vw;
+    background-color: #2D333B;
+    width: 150px;
     height: 100vh;
 }
 
+.signOut{
+    height: 50px;
+    width: 150px;
+    background-color: #8F1021;
+    box-shadow: 0 3px
+    10px  #750D1B;
+    color: #F59B7D;   /* text color  */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    top: 10%;
+}
+
 .homeSize{
-    font-size: 2vw;
+    font-size: 18px;
     width: 8vw;
     height: 6vh;
     margin: 1vw;
+    background-color: #2D333B;
+    font-weight: bold;
+    color: #99A3AD;
+    outline: none;
+    border: none;
 }
 
 .userButton{

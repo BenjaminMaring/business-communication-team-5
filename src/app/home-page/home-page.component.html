@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Main Page</title>
 </head>
@@ -14,7 +14,9 @@
 <body>
     <div class="wrapper">
         <div class="button-position-set">
-            <button routerLink="/messages" class ="button">Messages</button>
+            <button routerLink="/messages" class ="button">
+                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                Messages</button>
         </div>
         
         <div class="mainDisplay">
@@ -28,8 +30,11 @@
                 <input type="text" class ="searchBox" placeholder="Search for user here..." >
             </div>   
         </div>
-
-        <button routerLink= "/login" class="signOut">Sign Out</button>
+        <div>
+            <button routerLink= "/login" class="signOut">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</button>
+        </div>
+     
     </div>
 </body>
 </html>
