@@ -10,7 +10,7 @@ body {
     justify-self: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #fff;
+    background-color: #fffcfc;
 }
 
 .wrapper{
@@ -27,7 +27,7 @@ body {
 
 .signOut{
     height: 50px;
-    width: 150px;
+    width: 140px;
     background-color: #8F1021;
     box-shadow: 0 3px
     10px  #750D1B;
@@ -54,7 +54,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 20px; 
+    outline: none;
+    border: none;
+    background-color: #60676E;
+    color: #DCEBFA;
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-top:1px;
 }
 
 .userButton:hover{

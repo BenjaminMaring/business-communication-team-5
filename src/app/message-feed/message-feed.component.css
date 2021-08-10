@@ -1,7 +1,12 @@
+* {
+    margin: 1px;
+    padding: 1px;
+}
+
 .messageBox{
     border: solid;
     color: black;
-    margin: 4px;
+    margin: 5px;
 }
 
 .image{
@@ -20,6 +25,7 @@
     height: 70vh;
     width: 80vw;
 }
+
 h1{
     margin: 10px;
 }
