@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD
 <div class="outerBox scroll">
     <div *ngFor="let item of channel.messages; let i = index">
         <div class="messageBox">           
@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Feed</title>
-</head>
+</head> -->
 <body>
     <div class="outerBox scroll">
         <div *ngFor="let item of channel.messages; let i = index">
@@ -27,15 +27,16 @@
                         <h1>{{item.username}}</h1>
                     </div>
                 <h3>{{item.chatMessage}}</h3>
-                <button (click)="onDelete(i)">
-                    <i class="fa fa-trash" aria-hidden="true"></i>
-                   delete
-                </button>
+                <div style="display: flex;">
+                    <button (click)="onDelete(i)">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    delete
+                    </button>
+                    <h4>{{item.timeStamp | date: 'short'}}</h4>
+                </div>
             </div>
-            
->>>>>>> 3422805cd6fd14a778715c69141870d42dd83df2
         </div>
     </div>
 </body>
-</html>
+<!-- </html> -->
 

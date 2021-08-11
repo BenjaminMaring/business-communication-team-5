@@ -24,12 +24,5 @@ export class MessageFeedComponent implements OnInit {
 
   onDelete(index: number) {
     this.channel.messages.splice(index, 1);
-    // this.channel.messages.splice(//arg1 - startingIndex, //arg2 - deleteCount);
-
-      // for (let i=0; i!== this.channel.messages.length; i++){
-      //   if (message === this.channel.messages[i]){
-        // channelIndex = i;
-      //   }//end if
-      // }//end for
   }
 }

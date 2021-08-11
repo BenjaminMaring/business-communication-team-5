@@ -15,9 +15,9 @@ export class MessagesComponent implements OnInit {
     channelName : "Na-Young",
     description: "Chatting with Na-Young",
     messages : [
-      { username: "Select_a_Channel_to_get_started",
+      { username: "Welcome",
         avatarURL: "",
-        chatMessage: "",
+        chatMessage: "Select A User To Get Started.",
         timeStamp: "",
         edited: true}]};
 
@@ -52,17 +52,6 @@ export class MessagesComponent implements OnInit {
       let tempDate = Date.now();
       this.userInfoService.pushObj(chat, tempDate, i);
       this.getUsers();
-
-    // Step 1: Get the index of the channel you're currently displaying
-    // Step 2: Create a method on the UserInfoService that pushes a message object to the channel index
-    //         pushMessage(channelIndex: number, newMessage: Message) {
-    //           this.messages[channelIndex].messages.push(newMessage);
-    //         }
-    // Step 3: Refresh your channel data within this component, now that the service has the new data
-
-    // if(chat) {
-    //   this.chat_messages.push(chat)
-    // }
   }
   
   getMessagesChat(): void {

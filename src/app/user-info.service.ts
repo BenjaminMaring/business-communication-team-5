@@ -41,6 +41,7 @@ export class UserInfoService {
 constructor() { }
 
 //code below is for getting the data to messages component
+
 getUsers(){
   return this.messages;
 }
@@ -63,7 +64,6 @@ pushObj(message: string, time: number, index: number): void{
         timeStamp: time,
         edited: true,
       };
-      
       this.messages[index].messages.push(obj);
 }
 

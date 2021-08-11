@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,12 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Message Form</title>
-</head>
+</head> -->
 
 <body>
   <div class="mainContent wrapper">
     <div class="userListWrapper">
-
       <!-- Bellow this is the code    -->
       <!--       for the menu         -->
       <div class = "format">
@@ -24,7 +23,6 @@
               Search
             </button>
         </div>
-    
         <div *ngFor ="let items of menu" class = "userButton">
             <button class="userButton" (click)="getChannel(items)">{{items.channelName}}</button>  
         </div>
@@ -43,15 +41,19 @@
       <input #message
       class="position"
       (keyup.enter)="sendChat(message.value); message.value='' ">
-<<<<<<< HEAD
+
+<!-- <<<<<<< HEAD
    
-=======
+======= -->
+
       <!-- <p *ngFor="let chatMessage of chat_messages">
         {{chatMessage.username}}: 
         {{chatMessage.timeStamp | date: 'short'}}: 
         {{chatMessage.messageContent}}
       </p> -->
->>>>>>> 3422805cd6fd14a778715c69141870d42dd83df2
+
+<!-- >>>>>>> 3422805cd6fd14a778715c69141870d42dd83df2 -->
+
     </div>
 
     <!--    Above is the code for the text box     -->
@@ -63,4 +65,4 @@
   </div>
 
 </body>
-</html>
+<!-- </html> -->
