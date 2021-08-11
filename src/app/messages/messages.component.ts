@@ -15,10 +15,10 @@ export class MessagesComponent implements OnInit {
     channelName : "Na-Young",
     description: "Chatting with Na-Young",
     messages : [
-      { username: "NaYoung",
+      { username: "Select_a_Channel_to_get_started",
         avatarURL: "",
-        chatMessage: "Hey! How are you??",
-        timeStamp: "2021-08-09 01:11:00",
+        chatMessage: "",
+        timeStamp: "",
         edited: true}]};
 
   channel: any= {};
