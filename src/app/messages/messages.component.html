@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Message Form</title>
+</head> -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Message Form</title>
-</head> -->
-
+  <link href="/messages.component.css">
 <body>
   <div class="mainContent wrapper">
     <div class="userListWrapper">
@@ -40,8 +42,8 @@
     <div class ="messageContainer">
       <input #message
       class="position"
-      (keyup.enter)="sendChat(message.value); message.value='' ">
-
+      (keyup.enter)="sendChat(message.value); message.value='' " placeholder=" Please enter your message..." >
+      
 <!-- <<<<<<< HEAD
    
 ======= -->

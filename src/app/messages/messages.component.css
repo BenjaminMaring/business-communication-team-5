@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: broder-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
+    position: absolute;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -21,14 +21,15 @@ body {
     display: flex; 
     flex-direction: column;
     background-color: #2D333B;
-    width: 150px;
+    width: 170px;
     height: 100vh;
 }
 
 .signOut{
     height: 50px;
-    width: 140px;
+    width:150px;
     background-color: #8F1021;
+    justify-content: right;
     box-shadow: 0 3px
     10px  #750D1B;
     color: #F59B7D;   /* text color  */
@@ -40,9 +41,9 @@ body {
 
 .homeSize{
     font-size: 18px;
-    width: 8vw;
+    width: 150px;
     height: 6vh;
-    margin: 1vw;
+    margin: 3px;
     background-color: #2D333B;
     font-weight: bold;
     color: #99A3AD;
@@ -68,8 +69,18 @@ body {
     color: white;
 }
 
+/* .messageContainer {
+    justify-content: center;
+} */
+
 .position{
+    overflow-wrap: break-word;
+    height: 20vh;
+    width: 82.5vw;
     position: absolute;
-    bottom: 5px;
-    left: 50%;
-  }
+    bottom: 20px;
+    left: 175px;
+    border-color:#2D333B;
+    background-color: #fff;
+    font-size: larger;
+}
