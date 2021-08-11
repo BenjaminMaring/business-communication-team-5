@@ -23,7 +23,7 @@
 .outerBox{
     border: solid;
     height: 75vh;
-    width: 82.5vw;
+    width: 82vw;
     justify-content: center;
 }
 
@@ -32,5 +32,9 @@ h1{
 }
 
 .position{
+    justify-content: center;
+}
+
+.signOut{
     justify-content: center;
 }

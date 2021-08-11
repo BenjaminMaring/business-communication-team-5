@@ -1,13 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
     position: absolute;
-    display: flex;
+    /* display: flex; */
+    display: inline-block;
     justify-self: center;
+    flex-direction: center;
     align-items: center;
     min-height: 100vh;
     background-color: #fffcfc;
@@ -27,9 +30,9 @@ body {
 
 .signOut{
     height: 50px;
-    width:150px;
+    width:158px;
     background-color: #8F1021;
-    justify-content: right;
+    /* justify-content: right; */
     box-shadow: 0 3px
     10px  #750D1B;
     color: #F59B7D;   /* text color  */
@@ -62,6 +65,7 @@ body {
     font-size: 20px;
     margin-bottom: 1px;
     margin-top:1px;
+    /* margin-left: 2px; */
 }
 
 .userButton:hover{
@@ -74,7 +78,8 @@ body {
 } */
 
 .position{
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
+    word-break: break-word;
     height: 20vh;
     width: 82.5vw;
     position: absolute;
